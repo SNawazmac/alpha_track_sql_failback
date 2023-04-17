@@ -1,4 +1,4 @@
-name: Invoke sql failover
+name: Invoke sql failback
 on: workflow_dispatch
 jobs:  
   job1:
