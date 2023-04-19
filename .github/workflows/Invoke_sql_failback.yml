@@ -1,5 +1,19 @@
 name: Invoke sql failback
-on: workflow_dispatch
+on: 
+  workflow_call:
+    inputs:
+      primary_mssql_server_resource_group_name:
+        required: true
+        type: string
+      primary_mssql_server_name: 
+        type: string
+        required: true
+      failover_group_name:
+        required: true
+        type: string  
+      primary_mssql_server_subscription_Id:
+        required: true
+        type: string  
 jobs:  
   job1:
     permissions:
