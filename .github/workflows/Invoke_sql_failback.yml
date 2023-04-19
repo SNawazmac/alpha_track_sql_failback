@@ -13,7 +13,10 @@ on:
         type: string  
       primary_mssql_server_subscription_Id:
         required: true
-        type: string  
+        type: string
+    secrets:
+      AZURE_CREDENTIALS_DELOITTE_SUB:
+        required: true  
 jobs:  
   job1:
     permissions:
