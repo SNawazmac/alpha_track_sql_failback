@@ -24,7 +24,9 @@ jobs:
     runs-on: ubuntu-latest       
     steps:
     - name: checkout
-      uses: actions/checkout@v2 
+      uses: actions/checkout@v2
+      with:
+        repository: SNawazmac/sql_failback
     - name: Login via Az module
       uses: azure/login@v1
       with:
